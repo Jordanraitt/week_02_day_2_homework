@@ -19,10 +19,12 @@ class RiversTest < MiniTest::Test
   end
 
   def test_river_has_fish()
-    assumed = [f1, f2, f3, f4]
-    assert_equal(assumed, @river1.fish)
+    assert_equal(4, @river1.fish.count)
   end
 
-
+  def test_remove_fish()
+    @river1.remove_fish(@river1.fish.last)
+    assert_equal(3, @river1.fish.count)
+  end
 
 end

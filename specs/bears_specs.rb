@@ -14,4 +14,12 @@ class BearsTest < MiniTest::Test
     assert_equal("Martin", @bear1.name)
   end
 
+  def test_take_from_river()
+    #maybe need to put something in here
+    assert_equal(1, @bear1.stomach.count)
+  end
+
+
+
+
 end
