@@ -8,4 +8,8 @@ attr_reader :name
     @stomach = []
   end
 
+def take_from_river(river_fish)
+  @stomach << river_fish
+end
+
 end

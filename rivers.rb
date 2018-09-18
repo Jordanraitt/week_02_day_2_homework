@@ -9,8 +9,8 @@ attr_reader :name
   end
 
   def remove_fish(fish)
-    fish_removed = (@fish.delete(fish))
-    # @fish.delete(fish)
+    # fish_removed = (@fish.delete(fish))
+    @fish.delete(fish)
   end
 
 end
